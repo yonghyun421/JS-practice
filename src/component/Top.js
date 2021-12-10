@@ -1,9 +1,18 @@
 import { Header } from 'semantic-ui-react';
+import Gnb from './Gnb';
 
 export default function Top() {
-    return <div>
-        <img src='/images/ts.png' alt='logo' />
-        <Header as='h1'>투데위</Header>
-        로고, 텍스트, GNB
-        </div>;
+    return (
+    <div>
+        <div style={{ display: 'flex', paddingTop: 20 }}>
+            <div style={{ flex: '100px 0 0' }}>
+                <img src='/images/ts.png' alt='logo' 
+                style={{ display: 'block', width: 80 }}
+                />
+            </div>
+            <Header as='h1'>투데위</Header>
+        </div>
+        <Gnb />
+    </div>
+    );
 }
